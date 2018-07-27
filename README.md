@@ -1,4 +1,4 @@
-# Oracle utility for milliseconds usage (UTL_MILLIS)
+# Oracle utility for unix timestamp in milliseconds usage (UTL_MILLIS)
 
 Oracle utility package for getting unix timestamp in milliseconds from dates and timestamps.
 
