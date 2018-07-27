@@ -3,6 +3,9 @@ SET SERVEROUTPUT ON
 SET TERMOUT OFF
 
 DECLARE
+  /**
+  * Checks if date as text and datetime format provided is equal to expected unix timestamp.
+  */
   PROCEDURE test_assert_date_text_ok IS
 
     lv_date_text         VARCHAR2(100 CHAR) DEFAULT '2018/07/28 22:40:24';

@@ -3,8 +3,10 @@ SET SERVEROUTPUT ON
 SET TERMOUT OFF
 
 DECLARE
+  /**
+  * Checks if date value provided is equal to expected unix timestamp.
+  */
   PROCEDURE test_assert_dateobj_text_ok IS
-
     lv_date_input        VARCHAR2(100 CHAR) DEFAULT TO_DATE('2003/07/09','yyyy/mm/dd');
     --
     lv_millis            NUMBER;
