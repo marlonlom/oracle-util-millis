@@ -12,7 +12,7 @@ CREATE OR REPLACE PACKAGE BODY utl_millis AS
     out_result          NUMBER;
     beginning_of_time   TIMESTAMP DEFAULT to_timestamp('1970-01-01','YYYY-MM-DD');
   BEGIN
-    out_result := extract ( DAY FROM ( sys_extract_utc(p_timestamp) - beginning_of_time ) ) * 86400000 + to_number(TO_CHAR(sys_extract_utc(systimestamp),'SSSSSFF3'));
+    out_result := extract ( DAY FROM ( sys_extract_utc(p_timestamp) - beginning_of_time ) ) * 86400000 + to_number(TO_CHAR(sys_extract_utc(p_timestamp),'SSSSSFF3'));
     RETURN out_result;
   END to_time_millis;
 
