@@ -4,6 +4,7 @@ CREATE OR REPLACE PACKAGE BODY utl_millis AS
   * Converts provided timestamp in milliseconds.
   *
   * @param p_timestamp timestamp to convert in milliseconds.
+  * @return datetime in milliseconds.
   */
   FUNCTION to_time_millis (
     p_timestamp IN TIMESTAMP
@@ -20,6 +21,7 @@ CREATE OR REPLACE PACKAGE BODY utl_millis AS
   *
   * @param p_date_text date as text to convert in milliseconds.
   * @param p_date_text datetime format for convert date to a timestamp.
+  * @return datetime in milliseconds.
   */
   FUNCTION to_time_millis (
     p_date_text     IN VARCHAR2,
@@ -34,6 +36,7 @@ CREATE OR REPLACE PACKAGE BODY utl_millis AS
   * Converts date object to a timestamp and then convert it in milliseconds.
   *
   * @param p_date_input date to convert in milliseconds.
+  * @return datetime in milliseconds.
   */
   FUNCTION date_to_millis (
     p_date_input IN DATE
@@ -46,6 +49,7 @@ CREATE OR REPLACE PACKAGE BODY utl_millis AS
 
   /**
   * Returns current timestamp as milliseconds.
+  * @return datetime in milliseconds.
   */
   FUNCTION current_time_millis RETURN NUMBER
     IS
