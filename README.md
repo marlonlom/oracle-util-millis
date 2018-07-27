@@ -22,7 +22,7 @@ SELECT utl_millis.date_to_millis(p_date_input => current_date) FROM dual;
 SELECT utl_millis.to_time_millis(p_date_text => '2003/07/09',p_date_format => 'yyyy/mm/dd') FROM dual;
 -- returns 1057785728978.
 ```
-_For more examples for datetime formats: [function to_date (from dba-oracle.com)](http://www.dba-oracle.com/f_to_date.htm)_
+_For more examples of datetime formats: [function to_date (from dba-oracle.com)](http://www.dba-oracle.com/f_to_date.htm)_
 
 
 ## How to install
