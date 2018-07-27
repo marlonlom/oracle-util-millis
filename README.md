@@ -8,13 +8,13 @@ Oracle utility package for getting unix timestamp in milliseconds from dates and
 ### a) Using current timestamp.
 ```sql
 SELECT utl_millis.current_time_millis FROM dual;
--- returns current timestamp from database.
+-- returns unix timestamp from database.
 ```
 
 ### b) Using a date.
 ```sql
 SELECT utl_millis.date_to_millis(p_date_input => current_date) FROM dual;
--- returns current date as timestamp from database.
+-- returns current date as unix timestamp from database.
 ```
 
 ### c) Using provided date as text and datetime format.
