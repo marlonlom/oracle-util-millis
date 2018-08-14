@@ -1,4 +1,4 @@
-CREATE OR REPLACE PACKAGE utl_millis AS
+CREATE OR REPLACE PACKAGE utl_unixtime AS
 
   /**
   * Converts provided timestamp in milliseconds.
@@ -38,7 +38,7 @@ CREATE OR REPLACE PACKAGE utl_millis AS
   */
   FUNCTION current_time_millis RETURN NUMBER;
 
-END utl_millis;
+END utl_unixtime;
 /
 
 SHOW ERRORS

@@ -1,6 +1,6 @@
 prompt >> drops package body
 BEGIN
-  EXECUTE IMMEDIATE 'DROP PACKAGE BODY utl_millis';
+  EXECUTE IMMEDIATE 'DROP PACKAGE BODY utl_unixtime';
 EXCEPTION
   WHEN OTHERS THEN
     IF
@@ -15,7 +15,7 @@ SHOW ERRORS
 
 prompt >> drops package head
 BEGIN
-  EXECUTE IMMEDIATE 'DROP PACKAGE utl_millis';
+  EXECUTE IMMEDIATE 'DROP PACKAGE utl_unixtime';
 EXCEPTION
   WHEN OTHERS THEN
     IF

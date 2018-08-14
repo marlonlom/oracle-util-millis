@@ -14,7 +14,7 @@ DECLARE
     lv_millis            NUMBER;
     lv_millis_expected   NUMBER DEFAULT 1532835624000;
   BEGIN
-    lv_millis := utl_millis.to_time_millis(p_date_text => lv_date_text,p_date_format => lv_date_format);
+    lv_millis := utl_unixtime.to_time_millis(p_date_text => lv_date_text,p_date_format => lv_date_format);
     IF
       ( lv_millis <> lv_millis_expected )
     THEN

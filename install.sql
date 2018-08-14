@@ -21,8 +21,8 @@
  * THE SOFTWARE.
  */
 
-@@src/utl_millis.drops.sql
+@@src/utl_unixtime.drops.sql
 prompt >> install package contents
-@@src/utl_millis.package.head.sql
-@@src/utl_millis.package.body.sql
-@@src/utl_millis.grants_synonym.sql
+@@src/utl_unixtime.package.head.sql
+@@src/utl_unixtime.package.body.sql
+@@src/utl_unixtime.grants_synonym.sql

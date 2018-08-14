@@ -1,4 +1,4 @@
-CREATE OR REPLACE PACKAGE BODY utl_millis AS
+CREATE OR REPLACE PACKAGE BODY utl_unixtime AS
 
   /**
   * Converts provided timestamp in milliseconds.
@@ -57,7 +57,7 @@ CREATE OR REPLACE PACKAGE BODY utl_millis AS
     RETURN to_time_millis(current_timestamp);
   END current_time_millis;
 
-END utl_millis;
+END utl_unixtime;
 /
 
 SHOW ERRORS
